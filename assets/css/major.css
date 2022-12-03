@@ -1,0 +1,154 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    z-index: 5;
+}
+.header
+{
+    z-index: 5;
+    background-color: #e6f0ff;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.header img
+{
+    width: 160px;
+}
+.header ul li
+{
+    display: inline-block;
+    padding-left: 30px;
+    position: relative;
+}
+
+.header ul li::after
+{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #d8cfce;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+
+}
+.header ul li:hover::after
+{
+    width: 100%;
+}
+.search
+{   
+   text-align: center;
+   position: relative;
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+input
+{
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+}
+input[type=text]
+{
+    padding-left: 40px;
+}
+.search i
+{
+    position: absolute;
+    left: 838px;
+    top: 11px;
+    padding: 11px 8px;
+}
+.dropdownmenu li
+{
+  color: gray;
+}
+.dropdownmenu ul, .dropdownmenu li {
+	margin: 0;
+	padding: 0;
+}
+.dropdownmenu ul {
+	list-style: none;
+	width: 100%;
+}
+.dropdownmenu li {
+	float: left;
+	position: relative;
+	top: 20px;
+}
+.dropdownmenu a {
+	background: #607390;
+	color: black;
+	display: block;
+	font: bold 16px/20px sans-serif;
+	padding: 0px 25px;
+	text-align: center;
+	text-decoration: none;
+}
+
+#submenu {
+	left: 119px;
+	opacity: 0;
+	position: absolute;
+	visibility: hidden;
+	z-index: 1;
+}
+li:hover ul#submenu {
+	opacity: 1;
+	top: -20px;
+	visibility: visible;
+}
+#submenu li {
+	float: none;
+	width: 140%;
+}
+#submenu a:hover {
+	background:gray;
+}
+#submenu a {
+	background-color:whitesmoke;
+}
+.menu 
+{
+    background-color: #607390;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    margin-top: 53px;
+}
+
+.content-saleoff
+{
+    margin-top: 10px;
+}
+.image
+{
+    height: 400px;
+}
+.image img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+.slick-initialized .slick-slide
+{
+    margin: 0 10px;
+}
+.header .sticky
+{
+    background: #fff;
+    opacity: 0.9;
+}

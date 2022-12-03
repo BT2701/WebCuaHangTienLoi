@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./assets/css/login_style.css">
+        <title>Đăng nhập tài khoản G8's Shop</title>
+        <link rel="icon" type="image/x-icon" href="image/titlelogo.png">
+        <script src="https://kit.fontawesome.com/d024a30ea1.js" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+        <section class="header">
+            <a href="./idex.html"><img src="./assets/img/top_header/logo.png" style="height: 29px ;width: auto"; alt=""></a>
+            <ul>
+                <li><i class="fa-solid fa-bell"></i><a href="">Contact</a></li>
+                <li><i class="fa-solid fa-circle-question"></i><a href="idex.html">Trang chủ</a></li>
+                <li><i class="fa-solid fa-earth-americas"></i><a href="">English</a></li>
+                
+            </ul>
+        </section>
+        <p><b>Đăng nhập </b></p>
+        <div class="container">
+            <div class="screen">
+                <div class="screen__content">
+                    <form class="login" onsubmit="login()">
+                        <div class="login__field">
+                            <i class="login__icon fas fa-user"></i>
+                            <input type="text" id="username" class="login__input" placeholder="User name / Email">
+                        </div>
+                        <div class="login__field">
+                            <i class="login__icon fas fa-lock"></i>
+                            <input type="password" id="password" class="login__input" placeholder="Password">
+                        </div>
+                        <button class="button login__submit" >
+                            <span class="button__text" ></span><a >Đăng nhập</a></span>
+                            <i class="button__icon fas fa-chevron-right"></i>
+                        </button>			                      
+                    </form>
+                    <div class="social-login">
+                        <h3>Contact Us</h3>
+                        <div class="social-icons">
+                            <a href="#" class="social-login__icon fab fa-instagram"></a>
+                            <a href="#" class="social-login__icon fab fa-facebook"></a>
+                            <a href="#" class="fa-solid fa-envelope"> </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="screen__background">
+                    <span class="screen__background__shape screen__background__shape4"></span>
+                    <span class="screen__background__shape screen__background__shape3"></span>		
+                    <span class="screen__background__shape screen__background__shape2"></span>
+                    <span class="screen__background__shape screen__background__shape1"></span>
+                </div>		
+            </div>
+        </div>
+        <script src="./assets/js/login.js"></script>
+    </body>
+</html>

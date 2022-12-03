@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="contact.css"> 
+    <script src="https://kit.fontawesome.com/d024a30ea1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section>
+        <h1>CONTACT US</h1>
+        <p>Please select your area of interest to help us route your feedback to the correct department. If your comment or question involves a specific store, please provide that information as well.</p>
+    </section>
+
+
+    <div class="container">
+        <form>
+            <div class="row">
+                <div class="input-group">
+                    <input type="text" id="name" required>
+                    <label for="name"><i class="fa-solid fa-user"></i>Full Name</label>
+                </div>
+                <div class="input-group">
+                    <input type="text" id="number" required>
+                    <label for="number"><i class="fa-sharp fa-solid fa-phone"></i>Phone</label>
+                </div>
+            </div>
+
+            <div class="row2">
+                <div class="input-group">
+                    <input type="text" id="email" required>
+                    <label for="email"><i class="fa-solid fa-envelope"></i>Email address</label>
+                </div>
+                <div class="input-group">
+                    <input type="text" id="zip" required>
+                    <label for="zip"><i class="fa-solid fa-earth-americas"></i>Zip/Postal Code</label>
+                </div> 
+            </div>
+             
+            
+            <div class="input-group">
+                <textarea id="message" rows="8"></textarea>
+                <label for="message"><i class="fa-solid fa-comment"></i>Message</label>
+            </div>
+            <button type="submit"><i class="fa-solid fa-check"></i>Submit</button>
+        </form>
+    </div>
+</body>
+</html>

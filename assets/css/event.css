@@ -1,0 +1,148 @@
+/* *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: "Oswald", sans-serif;
+    background-color: rgb(239, 236, 233);
+} */
+
+#out-page{
+    height: 39px;
+    border-bottom: solid 1px black;
+    width: 100%;
+    margin: auto;
+    top: 80px;
+    position: fixed;
+    background-color: #7b7272;
+    /* margin-left: 55px; */
+    z-index: 1;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    left: 50%;
+    translate: -50% 0;
+}
+
+#out-page a{
+    position: absolute;
+    padding-top: 8px;
+    right: 107px;
+    text-decoration: none;
+    font-size: 17px;
+    color: rgb(0, 1, 2);
+}
+#out-page a:hover{
+    color: #51B1B9;
+}
+#out-page h1{
+    position: absolute;
+    padding-top: 8px;
+    right: 23px;
+    font-size: 16px;
+    padding-top: 15px;
+}
+
+#header-event{
+    height: 100%;
+    margin-top: 119px;
+    /* text-align: center; */
+    padding: 0 150px;
+    width: 90%;
+    margin: auto;
+    background-color: rgb(189 189 187);
+    padding-bottom: 15px;
+    /* border-bottom: solid 2px black; */
+}
+#header-event > h1{
+    padding: 18px 150px;
+    font-size: 2.571em;
+    color: #51B1B9;
+    vertical-align: baseline;
+    margin-top: 128px;
+    text-align: center;
+}
+#header-event h2{
+    font-size: 17px;
+    padding: 28px 44px;
+    color: black;
+    text-align: center;
+}
+
+#header-event .infor{
+    box-shadow: 0 0 10px rgba(0, 0, 0,0.1);
+    padding: 0 0 ;
+    border: dotted 1px;
+
+}
+#header-event .infor .picture1{
+    margin: auto;
+    height: auto;
+    width: 100%;
+}
+#header-event .infor span{
+    background-color: blue;
+    position: relative;
+    text-decoration: none;
+    list-style-type: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0,0.1);
+    border-radius: 4px;
+    padding: 4px 6px;
+    top: 8px;
+    /* right: 249px; */
+    /* font-family: "FontAwesome"; */
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 0;
+    left: 43px;
+}
+#header-event .infor .like-icon,
+#header-event .infor .sr-icon{
+    text-align: center; 
+    position: relative;
+    color: #fff;
+    background-color: blue;
+    width: 10px;
+}
+#header-event .infor i{
+    font-style: Arial;
+}
+#header-event .infor a{
+    text-decoration: none;
+    list-style-type: none;
+    z-index: 0;
+    position: relative;
+    color: beige;
+}
+#header-event .infor .test{
+    padding: 10px 10px;
+    z-index: 0;
+    position: relative;
+    top: 54px;
+    left: 509px;
+
+}
+#header-event .infor > h1{
+    margin-top: 15px;
+    text-align: left;
+    padding: 5px 39px;
+    color: #51B1B9;
+    text-shadow: 1px 1px 0 black;
+}
+#header-event .infor .time{
+    position: relative;
+    text-align: left;
+    padding: 4px 39px;
+    font-style: italic;
+    z-index: 0;
+}
+#header-event .infor .title{
+    position: relative;
+    text-align: left;
+    padding: 4px 39px;
+    font-size: medium;
+    font-family: Arial;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    z-index: 0;
+}

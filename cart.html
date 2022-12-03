@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ Hàng</title>
+    <link rel="stylesheet" href="./assets/css/cart.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/products.css">
+    <link rel="stylesheet" href="./assets/css/event.css">
+    <!-- <link rel="stylesheet" href="./assets/css/Homepage.css"> -->
+    <script src="./assets/js/home.js"></script>
+    <script src="https://kit.fontawesome.com/d024a30ea1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/icon/themify-icons-font/themify-icons/themify-icons.css">
+    <link
+        rel="stylesheet"
+        type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+      />
+</head>
+<body id="test">
+    <div id="top-header">
+        <!-- begin logo -->
+        <div class="logo">
+            <a href="./idex.html"><img src="./assets/img/top_header/logo.png" alt="" class="logo-brand"></a>
+        </div>
+        <!-- end logo -->
+        <!-- begin login -->
+        <div class="login-btn">
+            <li><a href="./login.html"><i class="user-icon ti-user"></i>Login</a></li>
+        </div>
+        <!-- end login -->
+        <!-- begin cart -->
+
+        <div class="cart-btn">
+            <a href="./cart.html"><i class="cart-icon ti-shopping-cart"></i></a>
+            <div class="cart-list">
+                <div class="top-nullcart">
+                    <h1>Giỏ Hàng Rỗng</h1>
+                    <img src="./assets/img/top_header/nullcart.png" alt="">
+                </div>
+                <h1 class="title">Sản Phẩm Mới</h1>
+                <div id="item-header">
+                
+                </div>
+            </div>
+        </div>
+
+    <div id="out-page">
+            <a href="./idex.html">Trang Chủ / </a>
+            <h1 >Giỏ Hàng</h1>
+    </div>
+    <div id="main-list">
+        <div id="content-cart">
+            <h1 class="icon-truck ti-truck"> <i class="content">Nhấn vào mục Mã giảm giá ở cuối trang để hưởng miễn phí vận chuyển bạn nhé!</i></h1>
+        </div>
+        <div id="top-list">
+            <h2 style="width: 2%;"> <input type="checkbox" name="" class="checkbox" onclick="totalAmount()"> 
+            </h2>
+            <h2 style="width: 20%;position: relative;top: 9px;">Sản Phẩm</h2>
+            <h1>Đơn Giá</h1>
+            <h1>Số Lượng</h1>
+            <h1>Số Tiền</h1>
+            <h1>Thao Tác</h1>
+        </div>
+        <div id="item">
+            <div class="nullcart">
+                <h1>Giỏ Hàng Rỗng</h1>
+                <img src="./assets/img/top_header/nullcart.png" alt="">
+                <a href="./products.html"><button>MUA HÀNG</button></a>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="box-payment">
+        <div class="top">
+            <svg class="icon-seo" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><style>@keyframes rotate{0%{transform:rotateZ(0)}to{transform:rotateZ(360deg)}}</style><path stroke="#0A0A30" stroke-width="1.5" d="M10.524 4.614a2 2 0 012.952 0l.459.502a2 2 0 001.565.648l.68-.03a2 2 0 012.087 2.087l-.03.68a2 2 0 00.648 1.564l.501.46a2 2 0 010 2.95l-.502.46a2 2 0 00-.648 1.565l.03.68a2 2 0 01-2.086 2.087l-.68-.03a2 2 0 00-1.565.648l-.46.501a2 2 0 01-2.95 0l-.46-.502a2 2 0 00-1.565-.648l-.68.03a2 2 0 01-2.087-2.086l.03-.68a2 2 0 00-.647-1.565l-.502-.46a2 2 0 010-2.95l.502-.46A2 2 0 005.764 8.5l-.03-.68A2 2 0 017.82 5.734l.68.03a2 2 0 001.564-.647l.46-.502z"  style="animation:rotate 2s linear both infinite;transform-origin:center center"/><path stroke="#265BFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13.873 10.004l-3.746 3.992"/><circle cx="10.127" cy="10.004" r="1.074" fill="#265BFF"/><circle cx="13.873" cy="13.995" r="1.074" fill="#265BFF"/></svg>
+            <h1>Voucher</h1>
+            <h1 class="btn-voucher"><a href="" >Chọn hoặc nhập mã</a></h1>
+        </div>
+        <div class="mid">
+            <input type="checkbox"  id="checkcoin" onclick="coin()">
+            <h1 class="ti-flickr-alt icon-coin" > My Coin</h1>
+            <h2 id="value">100</h2>
+        </div>
+        <div class="bottom">
+            <input type="checkbox"  id="checksum">
+            <h1 onclick="onchecked2()">Chọn Tất Cả</h1>
+            <h1 onclick="deletecart()">Xóa</h1>
+            <h1 class="idex-payment">Tổng Thanh Toán <i class="am">0</i> <h1 class="name-temp">Sản Phẩm</h1></h1>
+            <h3 class="total"> <i class="total-amount">0</i> </h3>
+            <h1 id="payment" onclick="pay()">Thanh Toán</h1>
+        </div>
+    </div>
+
+    <div id="confirm">
+        <div class="box-confirm">
+            <h1>Thông tin thanh toán</h1>
+            <svg class="checktrue" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><style>@keyframes check {
+                to {
+                  stroke-dashoffset: 0;
+                }
+              }</style><path stroke="#0A0A30" stroke-linecap="round" stroke-width="1.5" d="M5.387 12.68l3.955 3.956 9.271-9.272" style="animation:check 2s infinite cubic-bezier(.99,-.1,.01,1.02)" stroke-dashoffset="100" stroke-dasharray="100"/></svg>
+            <h2 >Thanh Toán Thành Công</h2>
+        </div>
+    </div>
+
+</body>
+<script>
+    nullcart();
+    var lg = localStorage.getItem("login");
+    var login=JSON.parse(lg);
+    if(login!=false){
+      document.getElementsByClassName("login-btn")[0].children[0].children[0].innerHTML='<i class="user-icon ti-user"></i>'+login;
+      document.getElementsByClassName("login-btn")[0].children[0].children[0].href="";
+    }
+    else{
+      document.getElementsByClassName("login-btn")[0].children[0].children[0].innerHTML='<i class="user-icon ti-user"></i>Login';
+      document.getElementsByClassName("login-btn")[0].children[0].children[0].href="./login.html";
+    }
+    document.getElementsByClassName("login-btn")[0].onclick=function(e){
+      if(login!=false){
+        var lg = localStorage.getItem("login");
+        var login=JSON.parse(lg);
+        login = false;
+        localStorage.removeItem("login");
+        localStorage.setItem("login",JSON.stringify(login));
+        document.getElementsByClassName("login-btn")[0].children[0].children[0].innerHTML='<i class="user-icon ti-user"></i>Login';
+        document.getElementsByClassName("login-btn")[0].children[0].children[0].href="./login.html";
+      }
+      
+    }
+    var lg = localStorage.getItem("login");
+    var login=JSON.parse(lg);
+    if(login!=false){
+        totalAmount();
+        onchecked();
+        document.getElementById('checkcoin').onclick = function(e){
+                    if (this.checked){
+                        document.getElementById('value').style.color = '#b4cc28';
+                        var amount = document.getElementsByClassName("total-amount");
+                        console.log(amount[0].innerHTML.replace(/[^0-9]/g, ''));
+                        if(amount[0].innerHTML.replace(/[^0-9]/g, '')!=0){
+                            if(amount[0].innerHTML.replace(/[^0-9]/g, '') >= Number(document.getElementById('value').innerHTML)){
+                                amount[0].innerHTML=amount[0].innerHTML.replace(/[^0-9]/g, '')-Number(document.getElementById('value').innerHTML) + ' ₫  ';
+                            }
+                        }
+                    }
+                    else{
+                        document.getElementById('value').style.color = '#162826';
+                        totalAmount();
+                        sumProduct();
+                    }
+                };
+        showmycart();
+        showmycart2();
+    }
+    
+</script>
+</html>

@@ -1,0 +1,388 @@
+
+#test{
+    background-color: #f2f2f2;
+    /* backdrop-filter: blur(5px); */
+}
+
+#main-list{
+    position: fixed;
+    height: 57%;
+    top: 119px;
+    width: 100%;
+    overflow-x: auto;
+}
+#main-list #content-cart{
+    top: 10px;
+    position: relative;
+    padding: 12px 30px;
+    box-shadow: 0 0 3px #162826;
+
+    background-color: #a9acaa;
+    color: #f2f2f2;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#main-list #content-cart .icon-truck{
+    color: #f2f2f2;
+}
+#main-list #content-cart .content{
+    font-size: 18px;
+    font-style: initial;
+    background-color: #a9acaa;
+    color: #f2f2f2;
+}
+
+#main-list #top-list{
+    position: relative;
+    top: 18px;
+    display: flex;
+    box-shadow: 0 0 3px green;
+    padding: 15px 22px;
+    background-color: #dfe0df;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    
+}
+#main-list #top-list input[type=checkbox]{
+    
+}
+#main-list #top-list h1{
+    position: relative;
+    right: -23%;
+    padding: 4px 3%;
+    font-size: 15px;
+    width: 13%;
+}
+#main-list #top-list h2{
+    font-size: 15px;
+    padding: 4px 0;
+    position: relative;
+    width: 5%;
+    display: flex;
+}
+#box-payment{
+    position: fixed;
+    bottom: 0%;
+    background-color: #424d4c;
+    height: 26%;
+    z-index: 3;
+    box-shadow: 0 0 3px green;
+    width: 1215px;
+    left: 50%;
+    translate: -50% 0;
+    display: block;
+}
+#box-payment .top{
+    display: block;
+    border-bottom: dotted 1px black;
+    position: relative;
+    margin-top: 0;
+    height: 33.3%;
+    font-size: 9px;
+    display: flex;
+    text-align: center;
+}
+#box-payment .top h1{
+    position: relative;
+    display: inline-block;
+    top: 36.5%;
+    left: 60%;
+    color: #fff;
+}
+#box-payment .icon-seo{
+    position: relative;
+    height: auto;
+    width: 30px;
+    display: inline-block;
+    left: 60%;
+    color: #fff;
+}
+#box-payment .btn-voucher{
+    
+    left: 73%;
+}
+#box-payment a{
+    font-size: 14px;
+    color: #51B1B9;
+    position: relative;
+    display: inline-block;
+    left: 150%;
+}
+#box-payment .mid{
+    display: block;
+    border-bottom: dotted 1px black;
+    position: relative;
+    margin-top: 0;
+    height: 33.3%;
+    z-index: -1;
+    font-size: 9px;
+}
+#box-payment #checkcoin{
+    position: relative;
+    left: 57%;
+    top: 36.5%;
+    z-index: 1;
+}
+#box-payment .mid .icon-coin{
+    position: relative;
+    top: 8px;position: relative;
+    display: inline-block;
+    top: 36.5%;
+    left: 59.1%;
+    color:#b4cc28;
+}
+#box-payment #value{
+    font-size: 17px;
+    position: relative;
+    display: inline-block;
+    left: 80%;
+    top: 36.5%;
+    color: #162826;
+}
+#box-payment .bottom{
+    position: relative;
+    display: block;
+    z-index: -1;
+    font-style: oblique;
+    font-size: 9px;
+    top: 4.5%;
+    
+}
+#box-payment .bottom #checksum{
+    display: inline-block;
+    position: relative;
+    left: 5.5%;
+    z-index: 2;
+}
+#box-payment .bottom > h1{
+    display: inline-block;
+    position: relative;
+    left: 5%;
+    padding: 0 20px;
+    cursor: pointer;
+    z-index: 4;
+    color: #fff;
+    /* translate: 0 120%; */
+    top: 36.5%;
+}
+#box-payment .bottom > h2{
+    display: inline-block;
+    position: relative;
+    left: 30%;
+    top: 8%;
+    color: #b4cc28;
+}
+#box-payment .bottom #payment{
+    display: inline-block;
+    position: relative;
+    left: 26%;
+    background-color: red;
+    padding: 2px 7px;
+    border-radius: 7px;
+}
+#box-payment .bottom .idex-payment{
+    position: relative;
+    left: 31%;
+    color: #111;
+    font-style: initial;
+}
+
+#item{
+    height: auto;
+    position: relative;
+}
+  
+
+#item img{
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    overflow: hidden;
+    object-fit: cover;
+    translate: 0 -85%;
+}
+
+
+#item .img{
+    top: 19px;
+    width: 61px;
+    height: 61px;
+}
+#item .item-children{
+    position: relative;
+    top: 18px;
+    display: flex;
+    box-shadow: 0 0 3px green;
+    padding: 15px 22px;
+    background-color: #dfe0df;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#item .item-children h1{
+    position: relative;
+    right: -23%;
+    padding: 4px 3%;
+    font-size: 15px;
+    width: 13%;
+    top: 10px;
+    text-align: center;
+}
+#item .item-children h2{
+    font-size: 15px;
+    padding: 4px 0;
+    width: 5%;
+    display: flex;
+    top: 10px;
+}
+#item .xoabtn{
+    position: relative;
+    display: inline-block;
+    top: -1px;
+    z-index: 1;
+    cursor: pointer;
+}
+#item .check1sp{
+    display: inline-block;
+    position: relative;
+    top: -20px;
+}
+#item .stt{
+    width: 25px;
+
+}
+#item .soluong{
+
+    text-align: center;
+}
+#item  .plus-btn,
+#item  .min-btn{
+    cursor: pointer;
+    height: 14px;
+    width: 14px;
+    z-index: 1;
+    font-size: 8px;
+    background-color: #dfe0df;
+    border: none;
+    display: flex;
+}
+#item .plus-btn{
+    position: relative;
+    left: 65%;
+    top: -20px;
+}
+#item .min-btn{
+    position: relative;
+    left: 65%;
+    top: -20px;
+}
+
+#item .nullcart{
+    position: fixed;
+    width: 158px;
+    height: auto;
+    display: block;
+    top: 42%;
+    margin-left: 50%;
+    translate: -73% 0;
+}
+
+#item .nullcart h1{
+    position: relative;
+    display: inline-block;
+    font-style: italic;
+    top: 10px;
+    left: 46px;
+    font-size: 19px;
+}
+#item .nullcart img{
+    position: relative;
+    top: 112px;
+    right: -41px;
+}
+#item .nullcart button{
+    z-index: 1;
+    cursor: pointer;
+    position: relative;
+    top: 10px;
+    right: -77px;
+    height: 27px;
+    width: 85px;
+    background-color: red;
+    border-radius: 7px;
+}
+#box-payment .bottom .total{
+    position: relative;
+    height: 29px;
+    width: 153px;
+    right: -27%;
+    text-align: center;
+    font-size: 15px;
+    border: none;
+}
+#box-payment .bottom .am{
+    position: relative;
+    height: 29px;
+    width: 87px;
+    top: 3%;
+    text-align: center;
+    font-size: 19px;
+    color: red;
+    font-style: initial;
+}
+#box-payment .bottom .name-temp{
+    position: relative;
+    left: 368px;
+    color: #111;
+    font-style: initial;
+}
+#box-payment .bottom .total-amount{
+    color: #b4cc28;
+    font-style: initial;
+    position: relative;
+    top: 3px;
+}
+#confirm{
+    backdrop-filter: blur(5px);
+    position: absolute;
+    width: 100%;
+    height: 1000px;
+    z-index: 5;
+    display: block;
+    text-align: center;
+}
+#confirm .box-confirm{
+    position: relative;
+    height: 180px;
+    width: 30%;
+    z-index: 6;
+    top: 131px;
+    right: -35%;
+    display: block;
+    box-shadow: 0 0 3px green;
+    background-color: #e2e0e0;
+}
+#confirm .box-confirm h1{
+    display: inline-block;
+    font-size: 15px;
+    box-shadow: 0 0 3px green;
+    padding: 10px 117px;
+}
+
+#confirm .box-confirm .checktrue{
+    position: relative;
+    height: 76px;
+    width: 100%;
+}
+#confirm .box-confirm h2{
+    display: inline-block;
+    position: relative;
+}
+
+

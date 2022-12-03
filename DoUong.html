@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List of products</title>
+    <!-- <script src="./assets/js/product.js"></script> -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./assets/js/home.js"></script>
+    <script src="./assets/js/login.js"></script>
+    <link rel="stylesheet" href="./assets/css/products.css">
+    <!-- <link rel="stylesheet" href="./assets/css/cart.css"> -->
+    <link rel="stylesheet" href="./assets/css/event.css">
+    <link rel="stylesheet" href="./assets/icon/themify-icons-font/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/Footer.css">
+    <link rel="stylesheet" href="./assets/css/Homepage.css">
+</head>
+<body>
+    <div id="top-header">
+        <!-- begin logo -->
+        <div class="logo">
+            <a href="./idex.html"><img src="./assets/img/top_header/logo.png" alt="" class="logo-brand"></a>
+        </div>
+        <!-- end logo -->
+        <!-- begin login -->
+        <div class="login-btn">
+            <li>
+                <a href="./login.html">
+                  <i class="user-icon ti-user"></i>
+                  <h1>Login</h1>
+                </a>
+            </li>
+        </div>
+        <!-- end login -->
+        <!-- begin cart -->
+        <div class="cart-btn">
+            <a href="./cart.html"><i class="cart-icon ti-shopping-cart"></i></a>
+            <div class="cart-list">
+                <div class="top-nullcart">
+                    <h1>Giỏ Hàng Rỗng</h1>
+                    <img src="./assets/img/top_header/nullcart.png" alt="">
+                </div>
+                <h1 class="title">Sản Phẩm Mới</h1>
+                <div id="item-header">
+                
+                </div>
+            </div>
+        </div>
+        <!-- end cart -->
+    </div>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Metal+Mania&family=Open+Sans:wght@300&display=swap');   
+    </style>
+    <div id="out-page">
+        <a href="./idex.html">Trang Chủ / </a>
+        <h1>Sản Phẩm</h1>
+    </div>
+    <div id="confirm">
+        <div class="box-confirm">
+            <h1>Thêm thành công</h1>
+            <svg class="checktrue" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><style>@keyframes check {
+                to {
+                  stroke-dashoffset: 0;
+                }
+              }</style><path stroke="#0A0A30" stroke-linecap="round" stroke-width="1.5" d="M5.387 12.68l3.955 3.956 9.271-9.272" style="animation:check 2s infinite cubic-bezier(.99,-.1,.01,1.02)" stroke-dashoffset="100" stroke-dasharray="100"/></svg>
+            <h2 >Sản Phẩm Đã Được Thêm Vào Giỏ Hàng</h2>
+        </div>
+    </div>
+    <div id="wrapper">
+        <div class="headline">
+            <h3>Đồ Uống</h3>   <!-- cái tiêu đề sản phẩm  -->
+        </div>
+        <ul class="products">
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="HinhAnhSanPham/Do_Uong/7up.jpg" alt="">
+                        </a>
+                        <!--mua ngay -->
+                        <a class="buy-now" onclick="themvaogiohang(this)">mua ngay</a>
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-cat">Đồ Uống</a>
+                        <a href="" class="product-name">7 Up</a>
+                        <div class="product-price">7.000VNĐ</div>
+                        <!-- begin count products -->
+                        <div id="buy-amount">
+                            <button class="minus-btn" onclick="handleMinus(this)"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15" />
+                                </svg>
+                            </button>
+                            <input type="text" name="amount" id="amount-product" value=1>
+                            <button class="plus-btn" onclick="handlePlus(this)"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                                </svg>                              
+                            </button>
+                        </div>
+                        <!-- end count products -->
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="HinhAnhSanPham/Do_Uong/Coca cola.jpg" alt="">
+                        </a>
+                        <!--mua ngay -->
+                        <a class="buy-now" onclick="themvaogiohang(this)">mua ngay</a>
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-cat">Đồ Uống</a>
+                        <a href="" class="product-name">Coca Cola</a>
+                        <div class="product-price">12.000VNĐ</div>
+                        <!-- begin count products -->
+                        <div id="buy-amount">
+                            <button class="minus-btn" onclick="handleMinus(this)"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15" />
+                                </svg>
+                            </button>
+                            <input type="text" name="amount" id="amount-product" value=1>
+                            <button class="plus-btn" onclick="handlePlus(this)"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                                </svg>                              
+                            </button>
+                        </div>
+                        <!-- end count products -->
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="HinhAnhSanPham/Do_Uong/Mirinda-Cam.jpg" alt="">
+                        </a>
+                        <!--mua ngay -->
+                        <a class="buy-now" onclick="themvaogiohang(this)">mua ngay</a>
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-cat">Đồ Uống</a>
+                        <a href="" class="product-name">MirinDa Cam</a>
+                        <div class="product-price">9.000VNĐ</div>
+                        <!-- begin count products -->
+                        <div id="buy-amount">
+                            <button class="minus-btn" onclick="handleMinus(this)"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15" />
+                                </svg>
+                            </button>
+                            <input type="text" name="amount" id="amount-product" value=1>
+                            <button class="plus-btn" onclick="handlePlus(this)"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                                </svg>                              
+                            </button>
+                        </div>
+                        <!-- end count products -->
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="HinhAnhSanPham/Do_Uong/Mirinda-đen.jpg" alt="">
+                        </a>
+                        <!--mua ngay -->
+                        <a class="buy-now" onclick="themvaogiohang(this)">mua ngay</a>
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-cat">Đồ Uống</a>
+                        <a href="" class="product-name">Mirinda Đen</a>
+                        <div class="product-price">9.000VNĐ</div>
+                        <!-- begin count products -->
+                        <div id="buy-amount">
+                            <button class="minus-btn" onclick="handleMinus(this)"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15" />
+                                </svg>
+                            </button>
+                            <input type="text" name="amount" id="amount-product" value=1>
+                            <button class="plus-btn" onclick="handlePlus(this)"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                                </svg>                              
+                            </button>
+                        </div>
+                        <!-- end count products -->
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="HinhAnhSanPham/Do_Uong/Monster ultra.jpg" alt="">
+                        </a>
+                        <!--mua ngay -->
+                        <a class="buy-now" onclick="themvaogiohang(this)">mua ngay</a>
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-cat">Đồ Uống</a>
+                        <a href="" class="product-name">Monster Ultra</a>
+                        <div class="product-price">24.000VNĐ</div>
+                        <!-- begin count products -->
+                        <div id="buy-amount">
+                            <button class="minus-btn" onclick="handleMinus(this)"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15" />
+                                </svg>
+                            </button>
+                            <input type="text" name="amount" id="amount-product" value=1>
+                            <button class="plus-btn" onclick="handlePlus(this)"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                                </svg>                              
+                            </button>
+                        </div>
+                        <!-- end count products -->
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="HinhAnhSanPham/Do_Uong/Monster.jpg" alt="">
+                        </a>
+                        <!--mua ngay -->
+                        <a class="buy-now" onclick="themvaogiohang(this)">mua ngay</a>
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-cat">Đồ Uống</a>
+                        <a href="" class="product-name">Monster</a>
+                        <div class="product-price">20.000VNĐ</div>
+                        <!-- begin count products -->
+                        <div id="buy-amount">
+                            <button class="minus-btn" onclick="handleMinus(this)"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15" />
+                                </svg>
+                            </button>
+                            <input type="text" name="amount" id="amount-product" value=1>
+                            <button class="plus-btn" onclick="handlePlus(this)"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                                </svg>                              
+                            </button>
+                        </div>
+                        <!-- end count products -->
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="HinhAnhSanPham/Do_Uong/Pepsi.jpg" alt="">
+                        </a>
+                        <!--mua ngay -->
+                        <a class="buy-now" onclick="themvaogiohang(this)">mua ngay</a>
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-cat">Đồ Uống</a>
+                        <a href="" class="product-name">Pepsi</a>
+                        <div class="product-price">17.000VNĐ</div>
+                        <!-- begin count products -->
+                        <div id="buy-amount">
+                            <button class="minus-btn" onclick="handleMinus(this)"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15" />
+                                </svg>
+                            </button>
+                            <input type="text" name="amount" id="amount-product" value=1>
+                            <button class="plus-btn" onclick="handlePlus(this)"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                                </svg>                              
+                            </button>
+                        </div>
+                        <!-- end count products -->
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="HinhAnhSanPham/Do_Uong/Sting.jpg" alt="">
+                        </a>
+                        <!--mua ngay -->
+                        <a class="buy-now" onclick="themvaogiohang(this)">mua ngay</a>
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-cat">Đồ Uống</a>
+                        <a href="" class="product-name">Sting</a>
+                        <div class="product-price">12.000VNĐ</div>
+                        <!-- begin count products -->
+                        <div id="buy-amount">
+                            <button class="minus-btn" onclick="handleMinus(this)"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15" />
+                                </svg>
+                            </button>
+                            <input type="text" name="amount" id="amount-product" value=1>
+                            <button class="plus-btn" onclick="handlePlus(this)"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                                </svg>                              
+                            </button>
+                        </div>
+                        <!-- end count products -->
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+<footer class="footer-distributed">
+
+    <div class="footer-left">
+
+      <h3>G8'<span>MART</span></h3>
+
+      <p class="footer-links">
+        <a href="#" class="link-1">Home</a>
+        
+        <a href="#">Blog</a>
+      
+        <a href="#">Pricing</a>
+      
+        <a href="#">About</a>
+        
+        <a href="#">Faq</a>
+        
+        <a href="#">Contact</a>
+      </p>
+
+      <p class="footer-company-name">Company Name © 2022</p>
+    </div>
+
+    <div class="footer-center">
+
+      <div>
+        <i class="fa fa-map-marker"></i>
+        <p><span> 273 An Duong Vuong, Ward 3 , District 5 </span> Sai Gon University </p>
+      </div>
+
+      <div>
+        <i class="fa fa-phone"></i>
+        <p>+1.555.555.5555</p>
+      </div>
+
+      <div>
+        <i class="fa fa-envelope"></i>
+        <p><a href="mailto:support@company.com">support@company.com</a></p>
+      </div>
+
+    </div>
+
+    <div class="footer-right">
+
+      <p class="footer-company-about">
+        <span>About the company</span>
+        Something
+      </p>
+
+      <div class="footer-icons">
+
+        <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-linkedin"></i></a>
+        <a href="#"><i class="fa fa-github"></i></a>
+
+      </div>
+
+    </div>
+
+  </footer>
+    <script>
+        let amountElement = document.getElementById('amount-product');
+            let amount = amountElement.value;
+            //trả về giá trị cho value
+            let render=(amount)=>{
+                amountElement.value=amount
+            }
+
+            function handleMinus(x){
+            if(x.parentElement.children[1].value>1){
+                var amountElement = x.parentElement.children[1];
+                var amount= amountElement.value
+                amount--;
+                x.parentElement.children[1].value=amount;
+                }
+            }
+                function handlePlus(x){
+                var amountElement = x.parentElement.children[1];
+                var amount= amountElement.value
+                amount++;
+                x.parentElement.children[1].value=amount;
+            }
+            amountElement.addEventListener('input', ()=>{
+                amount=amountElement.value;
+                amount=parseInt(amount);
+                amount=(isNaN(amount)||amount<1)?1:amount;
+                render(amount);
+            });
+
+    var lg = localStorage.getItem("login");
+    var login=JSON.parse(lg);
+    loginE();
+    itemChildren();
+    </script>
+</html>
